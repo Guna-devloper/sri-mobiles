@@ -6,7 +6,7 @@ function AddToCart() {
     <section className="add-to-cart">
       <div className="cart-message">
         <img
-          src={NotAvailable} // Replace with an appropriate icon or image URL
+          src={NotAvailable} 
           alt="Cart icon"
           className="cart-icon"
           
