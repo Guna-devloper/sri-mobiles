@@ -7,7 +7,7 @@ function HeroBanner() {
       <div className="banner-content">
         <h2>Discover the Best Deals on Mobile Phones</h2>
         <p>Your one-stop shop for the latest smartphones and accessories.</p>
-        <a href="#products" className="cta-button">Shop Now</a>
+        <a href="/shopnow" className="cta-button">Shop Now</a>
       </div>
     </section>
   );
