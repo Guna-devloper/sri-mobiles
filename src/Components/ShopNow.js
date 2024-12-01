@@ -1,7 +1,12 @@
 import React from 'react';
 import './ShopNow.css';
+import { useNavigate } from 'react-router-dom';
 
 function ShopNow() {
+    const navigate = useNavigate();
+    const handleAddtocart = () =>{
+navigate("/addtocart")
+    }
   const products = [
     { id: 1, name: 'iPhone 15 Pro', price: '₹1,39,900', image: '/images/iphone15.jpg', description: 'A powerful smartphone with an advanced A17 Bionic chip and Dynamic Island display.' },
     { id: 2, name: 'Samsung Galaxy S23 Ultra', price: '₹1,24,999', image: '/images/s23.jpg', description: 'Flagship device with cutting-edge camera and S-Pen support.' },
@@ -21,7 +26,7 @@ function ShopNow() {
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p className="price">{product.price}</p>
-            <button className="buy-now">Add to Cart</button>
+            <button className="buy-now" onClick={handleAddtocart}>Add to Cart</button>
           </div>
         ))}
       </div>

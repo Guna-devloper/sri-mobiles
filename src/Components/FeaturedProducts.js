@@ -1,9 +1,14 @@
 import React from 'react';
 import './FeaturedProducts.css';
+import { useNavigate } from 'react-router-dom';
 
 function FeaturedProducts() {
+const navigate = useNavigate();
+const handleNotavailable  =()=>{
+    navigate("/addtocart")
+}
   const products = [
-    { id: 1, name: 'iPhone 15 Pro', price: '₹1,39,900', image: '/images/iphone15.jpg' },
+    { id: 1, name: 'iPhone 15 Pro', price: '₹1,39,900', image: '/Images/iphone.jpg' },
     { id: 2, name: 'Samsung Galaxy S23 Ultra', price: '₹1,24,999', image: '/images/s23.jpg' },
     { id: 3, name: 'OnePlus 11', price: '₹56,999', image: '/images/oneplus11.jpg' },
     { id: 4, name: 'Vivo X90 Pro', price: '₹84,999', image: '/images/vivox90.jpg' },
@@ -18,7 +23,7 @@ function FeaturedProducts() {
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.price}</p>
-            <button className="buy-now">Buy Now</button>
+            <button className="buy-now" onClick={handleNotavailable}>Buy Now</button>
           </div>
         ))}
       </div>
