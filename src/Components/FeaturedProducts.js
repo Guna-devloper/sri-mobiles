@@ -1,17 +1,20 @@
 import React from 'react';
 import './FeaturedProducts.css';
 import { useNavigate } from 'react-router-dom';
-import iphone from "../Images/iphone.jpg"
+import iphone15pro from "../Images/iphone.jpg"
+import SamsungGalaxyS23Ultra from "../Images/samsung-ultra.jpg";
+import OnePlus11 from "../Images/oneplus.jpg";
+import VivoX90Pro from "../Images/vivo.jpg";
 function FeaturedProducts() {
 const navigate = useNavigate();
 const handleNotavailable  =()=>{
     navigate("/addtocart")
 }
   const products = [
-    { id: 1, name: 'iPhone 15 Pro', price: '₹1,39,900', image: iphone },
-    { id: 2, name: 'Samsung Galaxy S23 Ultra', price: '₹1,24,999', image: '/images/s23.jpg' },
-    { id: 3, name: 'OnePlus 11', price: '₹56,999', image: '/images/oneplus11.jpg' },
-    { id: 4, name: 'Vivo X90 Pro', price: '₹84,999', image: '/images/vivox90.jpg' },
+    { id: 1, name: 'iPhone 15 Pro', price: '₹1,39,900', image: iphone15pro },
+    { id: 2, name: 'Samsung Galaxy S23 Ultra', price: '₹1,24,999', image: SamsungGalaxyS23Ultra },
+    { id: 3, name: 'OnePlus 11', price: '₹56,999', image: OnePlus11 },
+    { id: 4, name: 'Vivo X90 Pro', price: '₹84,999', image: VivoX90Pro },
   ];
 
   return (
