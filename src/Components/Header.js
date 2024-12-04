@@ -9,8 +9,8 @@ function Header() {
       <nav className="navbar">
         <Link to="/" >Home</Link>
         <Link to="/shopnow">Products</Link>
-        <a href="/about">About Us</a>
-        <a href="/contact">Contact</a>
+        <Link to="/about">About Us</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </header>
   );
