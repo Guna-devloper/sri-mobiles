@@ -12,7 +12,7 @@ navigate("/shopnow")
       <div className="banner-content">
         <h2>Discover the Best Deals on Mobile Phones</h2>
         <p>Your one-stop shop for the latest smartphones and accessories.</p>
-        <div onClick={handleShop} className="cta-button">Shop Now</div>
+        <button onClick={handleShop} className="cta-button">Shop Now</button>
       </div>
     </section>
   );

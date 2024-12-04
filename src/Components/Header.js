@@ -25,9 +25,9 @@ navigate("/contact")
       <h1 className="logo">Sri Mobiles</h1>
       <nav className="navbar">
       <a>  <div onClick={handleHome}>Home</div></a>
-        <div  onClick={handleShopNow}>Products</div>
-        <div  onClick={handleAbout}>About Us</div>
-        <div onClick={handleContact}>Contact</div>
+      <a>  <div  onClick={handleShopNow}>Products</div></a>
+      <a> <div  onClick={handleAbout}>About Us</div></a> 
+       <a> <div onClick={handleContact}>Contact</div></a>
       </nav>
     </header>
      <HeroBanner />
