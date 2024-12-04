@@ -1,16 +1,29 @@
 import React from 'react';
 import './Header.css';
-import { Link } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navigate = useNavigate();
+  const handleHome = () =>{
+navigate("/home")
+  }
+  const handleShopNow = () =>{
+navigate("/shopnow")
+  }
+  const handleAbout = () =>{
+navigate("/about")
+  }
+  const handleContact = () =>{
+navigate("/contact")
+  }
   return (
     <header className="header">
       <h1 className="logo">Sri Mobiles</h1>
       <nav className="navbar">
-        <Link to="/" >Home</Link>
-        <Link to="/shopnow">Products</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/contact">Contact</Link>
+        <div to="/" >Home</div>
+        <div to="/shopnow">Products</div>
+        <div to="/about">About Us</div>
+        <div to="/contact">Contact</div>
       </nav>
     </header>
   );
