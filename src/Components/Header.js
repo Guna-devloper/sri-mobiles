@@ -20,10 +20,10 @@ navigate("/contact")
     <header className="header">
       <h1 className="logo">Sri Mobiles</h1>
       <nav className="navbar">
-        <div to="/" >Home</div>
-        <div to="/shopnow">Products</div>
-        <div to="/about">About Us</div>
-        <div to="/contact">Contact</div>
+        <div onClick={handleHome}>Home</div>
+        <div  onClick={handleShopNow}>Products</div>
+        <div  onClick={handleAbout}>About Us</div>
+        <div onClick={handleContact}>Contact</div>
       </nav>
     </header>
   );
